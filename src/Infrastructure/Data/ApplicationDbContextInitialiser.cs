@@ -108,12 +108,13 @@ public class ApplicationDbContextInitialiser
 
         if(!_context.Users.Any())
         {
-            _context.AllUsers.Add(new Domain.Entities.User {                
+            _context.AllUsers.Add(new Domain.Entities.User 
+            {                
                 FirstName = "Daniel",
                 LastName = "Pretlove",
                 Email = "danielpretlove5@gmail.com",
                 DateAdded = DateTime.Now
-                });
+            });
         };
     }
 }

@@ -32,6 +32,12 @@ app.UseSwaggerUi(settings =>
     settings.DocumentPath = "/api/specification.json";
 });
 
+app.UseCors(c => c
+    .AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+);
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");

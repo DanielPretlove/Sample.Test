@@ -17,7 +17,7 @@ const AppRoutes = [
     element: <FetchData />
   },
   {
-    path: '/user-list',
+    path: '/my-team',
     element: <UserList />
   }
 ];

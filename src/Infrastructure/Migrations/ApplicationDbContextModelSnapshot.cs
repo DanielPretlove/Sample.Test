@@ -8,7 +8,7 @@ using Sample.Test.Infrastructure.Data;
 
 #nullable disable
 
-namespace Sample.Test.Infrastructure.Data.Migrations
+namespace Sample.Test.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
